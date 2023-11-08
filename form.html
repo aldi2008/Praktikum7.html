@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-weight: bold;
+            display: block;
+        }
+
+        .h2{
+            text-align: center;
+        }
+
+        .form-grup{
+            margin-bottom: 10px;
+        }
+
+        .form-container{
+            background-color: antiquewhite;
+            border: 1px solid red;
+            border-radius: 10px;
+            box-shadow: 0 0 10px blueviolet;
+            padding: 30px;
+            width: 320px;
+            margin: 100px auto;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+         <h2>FORM DATA PEGAWAI</h2>
+         <form method="post" action="">
+
+            <div class="form-grup">
+                <label for="nik">NIK</label>
+                <input type="text" id="nik">
+            </div>
+
+            <div class="form-grup">
+                <label for="nama">NAMA</label>
+                <input type="text" id="nama">
+            </div>
+
+            <div class="form-grup">
+                <label for="TL">Tempat Lahir</label>
+                <input type="text" id="TL">
+            </div>
+
+            <div class="form-grup">
+                <label for="tangga lahir">Tanggal Lahir</label>
+                <input type="date" id="tanggal lahir">
+            </div>
+
+            <div class="form-grup">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" cols="40px" rows="3"></textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="no hp">No. Telp</label>
+                <input type="number" id="no hp">
+            </div>
+
+            <div class="form-grup">
+                <label for="jabatan">Jabatan</label>
+                <input type="text" name="education" list="jabatan">
+                <datalist id="jabatan">
+                    <option value="WAKET 1 ">
+                    <option value="WAKET 2">
+                    <option value="WAKET 3">
+                </datalist>
+            </div>
+
+            <div class="form-grup">
+                <label for="jabatan">Status</label>
+                <input type="text" name="education" list="status">
+                <datalist id="status">
+                    <option value="Senior">
+                    <option value="Junior">
+                    <option value="Magang">
+                </datalist>
+            </div>
+
+            <div class="simpan">
+                <p>
+                <input type="submit" value="simpan" style="background-color: blueviolet;"> <input type="reset" value="batal" style="background-color: brown;">
+                </p>
+            </div>
+    </div>
+
+
+</body>
+</html>
